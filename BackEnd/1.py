@@ -1,6 +1,4 @@
 import json
-import string
-import collections
 import matplotlib.pyplot as plt
 
 data = json.load(open('10000Student.json'))
@@ -58,15 +56,15 @@ for index in range(len(y)):
     if 0.9 * 840 <= y[index]:
         A = 5
     B.append(A)
-    print "Current Time hour is : ", index
+    print "Current Time hour is : ", index,': 00'
     # print "Total Requests in this Hour is : ",y[index]
-    print "Arranged bus dispatch rate is : ", B[index], "\n"
+    print "Arranged bus dispatch rate is : ", 'Every',B[index], 'minutes' "\n"
 
 
 C = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
      13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 
-plt.bar(C, y, alpha=0.9, width=1, facecolor='lightskyblue',
+plt.bar(C, B, alpha=0.9, width=1, facecolor='lightskyblue',
         edgecolor='white', label='one', lw=1)
 
 plt.savefig('Requests_Of_2500Students.png')
