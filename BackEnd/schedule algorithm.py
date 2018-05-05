@@ -1,3 +1,7 @@
+// written by: Yaocheng Tong, Yuhai Zhang, Minghao Qin
+// tested by: Yaocheng Tong, Yuhai Zhang, Minghao Qin
+// debugged by: Yaocheng Tong, Yuhai Zhang, Minghao Qin
+  
 import json
 import string
 import collections
